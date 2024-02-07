@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<description></description>
+		<author url="">My Brain Dude</author>
+		<update version="0.1.1">
+			<file name="Mage Armor (New).xml" url="" />
+		</update>
+	</info>
+
+
+	<!-- light armor -->
+	<element name="Mage Armor" type="Armor" source="My Brain Dude" id="ID_MBD_ARMOR_PROFICIENCY_LIGHT_MAGIC">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>A protective magical force surrounds you.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="cp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">13 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="13" />
+		</rules>
+	</element>
+	
+</elements>
